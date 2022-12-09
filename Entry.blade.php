@@ -8,23 +8,41 @@
     <title>BK.com</title>
 </head>
 <body>
-    <nav>
-        <label class="logo">BK.com</label>
-        <ul>
-            <li>
-                <Form action="#" method="Post"><input type="text" name="search" placeholder="Search your item"> 
-                <button type="submit">Search</button>
-                </Form></li>
 
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Cart</a></li>
+            {{View::make('header')}}
+
            
-            
-        </ul>
-    </nav>
+
+   <div class="big">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    First You need to Register, then, login to use this wabsite
+    <br>
+    <br>
+    <form action="{{url('/register')}}">
+        <input type="submit" class="btn" name="register" id="submit" value="Register" /></form>
+         
+        <br>
+        
+
+     If you have an account then just login
+     <br>
+     <br>
+     <form action="{{url('/login')}}">
+        <input type="submit" class="btn" name="login" id="submit" value="login" /></form>
+        <br>
+        <br>
+        <br>
+        <br><br><br><br><br><br>
+        
+
+   </div>
+          {{View::make('footer')}}
     
 </body>
 </html>
